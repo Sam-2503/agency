@@ -1,69 +1,13 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { SiSlack, SiNotion, SiAirbnb, SiZoom, SiStripe, SiMiro, SiFramer, SiLinear } from 'react-icons/si';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Work from '../components/Work';
 import Process from '../components/Process';
-import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
-
-// Grayscale Trusted By Logos Data
-const logos = [
-  { name: 'Slack', icon: SiSlack },
-  { name: 'Notion', icon: SiNotion },
-  { name: 'Airbnb', icon: SiAirbnb },
-  { name: 'Linear', icon: SiLinear },
-  { name: 'Zoom', icon: SiZoom },
-  { name: 'Stripe', icon: SiStripe },
-  { name: 'Miro', icon: SiMiro },
-  { name: 'Framer', icon: SiFramer },
-];
-
-// Counter Item component for "Why Choose Us"
-function CounterItem({ value, suffix, label }) {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: '-100px' });
-  const target = parseInt(value, 10);
-
-  useEffect(() => {
-    if (inView) {
-      let start = 0;
-      const duration = 2000; // 2 seconds
-      const increment = target / (duration / 16); // ~60fps
-      
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= target) {
-          setCount(target);
-          clearInterval(timer);
-        } else {
-          setCount(Math.floor(start));
-        }
-      }, 16);
-
-      return () => clearInterval(timer);
-    }
-  }, [inView, target]);
-
-  return (
-    <div ref={ref} className="text-center md:text-left space-y-2">
-      <h3 className="text-5xl md:text-7xl font-display font-black text-white">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-light">
-          {count}
-        </span>
-        {suffix}
-      </h3>
-      <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-muted-text/80">
-        {label}
-      </p>
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -73,30 +17,7 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
-      {/* TRUSTED BY SECTION */}
-      <section className="bg-[#050505] py-16 border-t border-b border-white/5 relative z-30">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <p className="text-center text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-muted-text/50 mb-10">
-            Trusted by fast-growing brands worldwide
-          </p>
-          
-          {/* Logo container using grid */}
-          <div className="grid grid-cols-4 md:grid-cols-8 gap-8 md:gap-12 items-center justify-items-center opacity-60">
-            {logos.map((logo) => {
-              const IconComponent = logo.icon;
-              return (
-                <div 
-                  key={logo.name}
-                  className="text-muted-text hover:text-white transition-all duration-300 transform hover:scale-110 cursor-pointer"
-                  title={logo.name}
-                >
-                  <IconComponent size={28} className="md:size-32" />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+
 
       {/* Services Section */}
       <Services />
@@ -104,26 +25,12 @@ export default function Home() {
       {/* Work Section */}
       <Work />
 
-      {/* WHY CHOOSE US (METRICS) SECTION */}
-      <section className="relative py-24 bg-[#050505] overflow-hidden border-t border-white/5">
-        <div className="absolute top-[40%] right-[-10%] w-[40%] h-[40%] orange-glow opacity-10 pointer-events-none" />
-        <div className="absolute bottom-[30%] left-[-10%] w-[40%] h-[40%] orange-glow opacity-10 pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
-            <CounterItem value="50" suffix="+" label="Projects Delivered" />
-            <CounterItem value="20" suffix="+" label="Clients Served" />
-            <CounterItem value="95" suffix="%" label="Client Retention" />
-            <CounterItem value="5" suffix="+" label="Years Experience" />
-          </div>
-        </div>
-      </section>
 
       {/* Process Section */}
       <Process />
 
-      {/* Testimonials Section */}
-      <Testimonials />
+
 
       {/* ABOUT SECTION */}
       <section id="about" className="relative py-24 md:py-32 bg-[#050505] overflow-hidden border-t border-white/5">

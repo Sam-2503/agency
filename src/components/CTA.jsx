@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiArrowRight } from 'react-icons/hi';
+
 
 export default function CTA() {
   return (
@@ -43,11 +43,10 @@ export default function CTA() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <a
-            href="mailto:hello@agency.com"
+            href="mailto:hello@upscale.agency"
             className="inline-flex items-center space-x-3 px-8 py-5 bg-brand-orange hover:bg-brand-glow text-white text-xs sm:text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-[0_8px_30px_rgba(255,91,46,0.3)] hover:shadow-[0_8px_40px_rgba(255,91,46,0.5)] hover:scale-105 group"
           >
             <span>Book A Discovery Call</span>
-            <HiArrowRight className="group-hover:translate-x-2 transition-transform duration-300 text-white" size={18} />
           </a>
         </motion.div>
 

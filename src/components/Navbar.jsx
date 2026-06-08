@@ -44,7 +44,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#home" className="flex items-center space-x-2">
             <span className="text-xl md:text-2xl font-bold font-display tracking-wider bg-gradient-to-r from-white via-white to-brand-orange bg-clip-text text-transparent">
-              AGENCY
+              upscale.agency
             </span>
           </a>
 
@@ -64,7 +64,6 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <span className="text-xs font-semibold text-muted-text/80 tracking-widest uppercase">1-800-458-56987</span>
             <a
               href="#contact"
               className="px-6 py-2.5 bg-brand-orange hover:bg-brand-glow text-white text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-[0_4px_20px_-5px_rgba(255,91,46,0.4)] hover:shadow-[0_4px_25px_-2px_rgba(255,91,46,0.6)]"
@@ -118,7 +117,6 @@ export default function Navbar() {
                 transition={{ delay: navLinks.length * 0.05, duration: 0.5 }}
                 className="pt-8 flex flex-col items-center space-y-4"
               >
-                <span className="text-xs font-semibold text-muted-text/60 tracking-widest uppercase">1-800-458-56987</span>
                 <a
                   href="#contact"
                   onClick={() => setIsOpen(false)}

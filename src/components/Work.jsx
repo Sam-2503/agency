@@ -5,51 +5,21 @@ import { HiArrowUpRight } from 'react-icons/hi2';
 const projects = [
   {
     id: 1,
-    title: 'Pulse SaaS Dashboard',
-    category: 'SaaS Platform',
-    desc: 'An AI-powered real-time tracking dashboard for enterprise-scale logistics operations.',
-    img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=550&q=80',
-    className: 'md:col-span-2 lg:col-span-8 aspect-[16/9]',
+    title: 'Aarogyadost',
+    category: 'Health OS & AI Layer',
+    desc: 'Worked for a startup building their Health OS product, and also built their core AI layer with backend.',
+    img: '/AarogyaDost.png',
+    url: 'https://www.aarogyadost.in',
+    className: 'md:col-span-1 lg:col-span-6 aspect-[16/10]',
   },
   {
     id: 2,
-    title: 'Aura Fitness Companion',
-    category: 'Mobile App',
-    desc: 'Native iOS and Android workout planner integrated with biometric sensors.',
-    img: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&h=600&q=80',
-    className: 'md:col-span-1 lg:col-span-4 aspect-[4/5]',
-  },
-  {
-    id: 3,
-    title: 'Omni AI Workspace',
-    category: 'AI Integration',
-    desc: 'Custom enterprise-grade LLM workplace orchestrating automated legal workflows.',
-    img: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&h=600&q=80',
-    className: 'md:col-span-1 lg:col-span-4 aspect-[4/5]',
-  },
-  {
-    id: 4,
-    title: 'Veloce Luxury Retail',
-    category: 'E-Commerce',
-    desc: 'High-speed headless commerce experience with interactive 3D product visualization.',
-    img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=550&q=80',
-    className: 'md:col-span-2 lg:col-span-8 aspect-[16/9]',
-  },
-  {
-    id: 5,
-    title: 'Elysian Estates',
-    category: 'Real Estate Portal',
-    desc: 'A premium property portal featuring seamless VR tours and brokerage operations.',
-    img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&h=550&q=80',
-    className: 'md:col-span-2 lg:col-span-7 aspect-[16/10]',
-  },
-  {
-    id: 6,
-    title: 'Aegis Telehealth Portal',
-    category: 'Healthcare App',
-    desc: 'High-security telehealth ecosystem connecting patients with certified specialists.',
-    img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&h=550&q=80',
-    className: 'md:col-span-1 lg:col-span-5 aspect-[16/12]',
+    title: 'Ziddfit',
+    category: 'Gym Website',
+    desc: "A gym's website focusing on fitness missions, training, and athletic excellence.",
+    img: '/ziddfit.png',
+    url: 'https://www.ziddfit.com/mission',
+    className: 'md:col-span-1 lg:col-span-6 aspect-[16/10]',
   }
 ];
 
@@ -97,16 +67,19 @@ export default function Work() {
           </motion.div>
         </div>
 
-        {/* Asymmetric Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-8 md:gap-12">
+        {/* Symmetrical Project Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
               key={project.id}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: index * 0.15 }}
-              className={`${project.className} group relative flex flex-col justify-end overflow-hidden border border-white/10 rounded-sm bg-black hover:border-brand-orange/30 transition-all duration-500`}
+              className={`${project.className} group relative flex flex-col justify-end overflow-hidden border border-white/10 rounded-sm bg-black hover:border-brand-orange/30 transition-all duration-500 cursor-pointer`}
             >
               {/* Overlay for hover glow and text legibility */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10 transition-opacity duration-500 opacity-90 group-hover:opacity-95" />
@@ -141,7 +114,7 @@ export default function Work() {
                   {project.desc}
                 </p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 

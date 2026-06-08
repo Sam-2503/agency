@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiOutlineSearch, HiOutlineDesktopComputer, HiOutlineCode, HiOutlineDeviceMobile, HiOutlineLightBulb, HiArrowNarrowRight } from 'react-icons/hi';
+import { HiOutlineSearch, HiOutlineCode, HiOutlineLightBulb, HiArrowNarrowRight } from 'react-icons/hi';
 
 const services = [
   {
@@ -12,27 +12,19 @@ const services = [
   },
   {
     num: '02',
-    title: 'Web Design',
-    icon: HiOutlineDesktopComputer,
-    description: 'Bespoke interfaces designed for Apple-level premium look-and-feel. We focus on conversion hierarchy and delightful interactions.',
-    features: ['UI/UX Interface Design', 'High-Converting Landing Pages', 'Interactive Dashboards', 'Modern Design Systems']
+    title: 'Software Development',
+    icon: HiOutlineCode,
+    description: 'Custom end-to-end design and engineering. We build high-converting interfaces, modern React/Next.js web applications, and premium iOS/Android mobile apps at 60fps.',
+    features: [
+      'UI/UX & Design Systems',
+      'React, Next.js & Custom Web Apps',
+      'iOS & Android App Development',
+      'API & SaaS Integrations',
+      'High-Converting Landing Pages'
+    ]
   },
   {
     num: '03',
-    title: 'Web Development',
-    icon: HiOutlineCode,
-    description: 'Engineered for speed, security, and scalability. We build clean React, Next.js, and custom frameworks that run at 60fps.',
-    features: ['React & Next.js Platforms', 'Custom Web Applications', 'API & SaaS Integrations', 'Headless CMS Architectures']
-  },
-  {
-    num: '04',
-    title: 'Mobile Apps',
-    icon: HiOutlineDeviceMobile,
-    description: 'Native and hybrid mobile applications designed to live in your clients pockets. Flawless animations and native feel.',
-    features: ['iOS Development', 'Android Apps', 'Flutter Cross-Platform', 'Mobile App Prototyping']
-  },
-  {
-    num: '05',
     title: 'Product Strategy',
     icon: HiOutlineLightBulb,
     description: 'Bridge the gap between business goals and engineering output. We help founders validate, plan, and build their MVPs.',
