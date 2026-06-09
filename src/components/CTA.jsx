@@ -43,10 +43,10 @@ export default function CTA() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <a
-            href="mailto:hello@upscale.agency"
+            href="mailto:upscale.agency19@gmail.com"
             className="inline-flex items-center space-x-3 px-8 py-5 bg-brand-orange hover:bg-brand-glow text-white text-xs sm:text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-[0_8px_30px_rgba(255,91,46,0.3)] hover:shadow-[0_8px_40px_rgba(255,91,46,0.5)] hover:scale-105 group"
           >
-            <span>Book A Discovery Call</span>
+            <span>Guwahati, Assam</span>
           </a>
         </motion.div>
 

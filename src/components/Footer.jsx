@@ -89,25 +89,25 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-muted-text">
               <li>
-                <span className="block text-white/50 text-xs uppercase tracking-wider">Email</span>
+                <span className="block text-white/50 text-sm md:text-base uppercase tracking-wider">Email</span>
                 <a href="mailto:upscale.agency19@gmail.com" className="hover:text-white transition-colors">
                   upscale.agency19@gmail.com
                 </a>
               </li>
               <li>
-                <span className="block text-white/50 text-xs uppercase tracking-wider">Phone</span>
+                <span className="block text-white/50 text-sm md:text-base uppercase tracking-wider">Phone</span>
                 <a href="tel:+918822617263" className="hover:text-white transition-colors">
                   +91-8822617263
                 </a>
               </li>
               <li>
-                <span className="block text-white/50 text-xs uppercase tracking-wider">Instagram</span>
+                <span className="block text-white/50 text-sm md:text-base uppercase tracking-wider">Instagram</span>
                 <a href="https://instagram.com/upscale.agency__" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
                   @upscale.agency__
                 </a>
               </li>
               <li>
-                <span className="block text-white/50 text-xs uppercase tracking-wider">Location</span>
+                <span className="block text-white/50 text-sm md:text-base uppercase tracking-wider">Location</span>
                 <span>Guwahati, Assam</span>
               </li>
             </ul>
@@ -116,7 +116,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="flex flex-col sm:flex-row items-center justify-between pt-8 text-xs text-muted-text/60 gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between pt-8 text-sm md:text-base text-muted-text/60 gap-4">
           <div>
             &copy; {currentYear} upscale.agency. All rights reserved.
           </div>
