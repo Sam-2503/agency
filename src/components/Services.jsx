@@ -14,11 +14,16 @@ const services = [
     num: '02',
     title: 'Software Development',
     icon: HiOutlineCode,
-    description: 'Custom end-to-end design and engineering. We build high-converting interfaces, modern React/Next.js web applications, and premium iOS/Android mobile apps at 60fps.',
+    description: 'Custom end-to-end design and engineering. We build high-converting interfaces, modern React/Next.js web applications, premium iOS/Android mobile apps, and AI-powered solutions that automate and scale.',
     features: [
       'UI/UX & Design Systems',
       'React, Next.js & Custom Web Apps',
       'iOS & Android App Development',
+      'AI Chatbots & Assistants',
+      'Custom AI Agents & Workflows',
+      'LLM Integration',
+      'Process Automation',
+      'AI-Powered Analytics',
       'API & SaaS Integrations',
       'High-Converting Landing Pages'
     ]
