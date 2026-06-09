@@ -42,7 +42,12 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2">
+          <a href="#home" className="flex items-center space-x-3">
+            <img
+              src="/upscale.jpeg"
+              alt="Upscale Agency"
+              className="w-9 h-9 rounded-full object-cover border border-white/10"
+            />
             <span className="text-xl md:text-2xl font-bold font-display tracking-wider bg-gradient-to-r from-white via-white to-brand-orange bg-clip-text text-transparent">
               upscale.agency
             </span>
