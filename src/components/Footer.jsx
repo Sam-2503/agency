@@ -40,9 +40,11 @@ export default function Footer() {
           
           {/* Brand Col */}
           <div className="col-span-2 lg:col-span-4 space-y-6">
-            <h3 className="text-2xl font-bold font-display tracking-wider bg-gradient-to-r from-white to-brand-orange bg-clip-text text-transparent">
-              upscale.agency
-            </h3>
+            <a href="#home" className="flex items-center">
+              <span className="text-xl md:text-2xl font-bold tracking-wider text-white" style={{ fontFamily: "'Amarante', cursive" }}>
+                UpScale
+              </span>
+            </a>
             <p className="text-sm text-muted-text/80 max-w-sm leading-relaxed">
               We design, build, and scale digital products that drive measurable business growth. A modern engineering approach with a focus on luxury aesthetics.
             </p>
