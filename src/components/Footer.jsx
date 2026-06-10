@@ -41,7 +41,7 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="col-span-2 lg:col-span-4 space-y-6">
             <a href="#home" className="flex items-center">
-              <span className="text-xl md:text-2xl font-bold tracking-wider text-white" style={{ fontFamily: "'Amarante', cursive" }}>
+              <span className="text-xl md:text-4xl font-bold tracking-wider text-white" style={{ fontFamily: "'Amarante', cursive" }}>
                 UpScale
               </span>
             </a>
