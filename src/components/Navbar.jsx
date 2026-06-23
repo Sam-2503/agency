@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 
 const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'Services', href: '#services' },
-  { name: 'Work', href: '#work' },
-  { name: 'Process', href: '#process' },
-  { name: 'About', href: '#about' },
+  { name: 'Home', href: '/#home' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Work', href: '/#work' },
+  { name: 'Process', href: '/#process' },
+  { name: 'About', href: '/#about' },
   { name: 'Privacy Policy', href: '/privacypolicy' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -36,8 +36,8 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-            ? 'py-4 bg-[#050505]/75 backdrop-blur-md border-b border-white/5'
-            : 'py-6 bg-transparent'
+          ? 'py-4 bg-[#050505]/75 backdrop-blur-md border-b border-white/5'
+          : 'py-6 bg-transparent'
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
