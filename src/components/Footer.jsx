@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaXTwitter } from 'react-icons/fa6';
+import { FaInstagram, FaXTwitter, FaLinkedin } from 'react-icons/fa6';
 
 const footerSections = [
   {
@@ -25,7 +25,7 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#050505] pt-20 pb-12 overflow-hidden border-t border-white/5">
-      
+
       {/* Background Watermark LOGO */}
       <div className="absolute bottom-[-10px] left-1/2 -translate-x-1/2 select-none pointer-events-none z-0">
         <h2 className="text-[14vw] font-display font-black leading-none text-white/[0.015] tracking-[0.1em] text-center uppercase">
@@ -34,10 +34,10 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        
+
         {/* Top footer row */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-10 lg:gap-16 pb-16 border-b border-white/5">
-          
+
           {/* Brand Col */}
           <div className="col-span-2 lg:col-span-4 space-y-6">
             <a href="#home" className="flex items-center">
@@ -48,7 +48,7 @@ export default function Footer() {
             <p className="text-sm text-muted-text/80 max-w-sm leading-relaxed">
               We design, build, and scale digital products that drive measurable business growth. A modern engineering approach with a focus on luxury aesthetics.
             </p>
-            
+
             {/* Social Icons */}
             <div className="flex items-center space-x-4 pt-2">
               <a
@@ -59,6 +59,15 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <FaInstagram size={16} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/upscaleagencyin/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-full bg-white/5 hover:bg-brand-orange hover:text-white border border-white/5 hover:border-brand-orange flex items-center justify-center text-muted-text transition-all duration-300"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin size={16} />
               </a>
               <a
                 href="https://x.com/upscaleagencyin"
@@ -132,9 +141,9 @@ export default function Footer() {
             &copy; {currentYear} upscale.agency. All rights reserved.
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Sitemap</a>
+            <a href="/privacypolicy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/#" className="hover:text-white transition-colors">Sitemap</a>
           </div>
         </div>
 
