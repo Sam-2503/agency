@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Lenis from 'lenis';
 import Home from './pages/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   useEffect(() => {
@@ -28,13 +30,16 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Router>
       {/* Global Grain/Film-noise Texture */}
       <div className="noise-overlay" />
       
-      {/* Main Agency Platform Page */}
-      <Home />
-    </>
+      <Routes>
+        {/* Main Agency Platform Page */}
+        <Route path="/" element={<Home />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+      </Routes>
+    </Router>
   );
 }
 
