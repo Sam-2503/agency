@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaXTwitter } from 'react-icons/fa6';
+import { FaInstagram, FaXTwitter, FaLinkedin } from 'react-icons/fa6';
 
 const footerSections = [
   {
@@ -59,6 +59,15 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <FaInstagram size={16} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/upscaleagencyin/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-full bg-white/5 hover:bg-brand-orange hover:text-white border border-white/5 hover:border-brand-orange flex items-center justify-center text-muted-text transition-all duration-300"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin size={16} />
               </a>
               <a
                 href="https://x.com/upscaleagencyin"
